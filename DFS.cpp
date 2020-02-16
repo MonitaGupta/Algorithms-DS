@@ -59,8 +59,7 @@ int main() {
                                  {9,10,11,12},
                                  {13,14,15,16}};
                               
-    vector<vector<bool>> visited(grid.size(), vector<bool>(grid[0].size()));
-    visited = {{false}};
+    vector<vector<bool>> visited(grid.size(), vector<bool>(grid[0].size(), false));
     vector<int> path;
      
     pair<int, int> source;
